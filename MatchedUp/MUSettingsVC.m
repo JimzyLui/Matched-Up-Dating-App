@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UISwitch *menSwitch;
 @property (strong, nonatomic) IBOutlet UISwitch *womenSwitch;
 @property (strong, nonatomic) IBOutlet UISwitch *singlesSwitch;
+@property (strong, nonatomic) IBOutlet UIButton *logButton;
+@property (strong, nonatomic) IBOutlet UIButton *editProfileButton;
 
 
 
@@ -35,6 +37,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.ageSlider.value = [[NSUserDefaults standardUserDefaults] integerForKey:kMUAgeMaxKey];
+    self.menSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:kMUMenEnabledKey];
+    self.womenSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:kMUWomenEnabledKey];
+    self.singlesSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:kMUSingleEnabledKey];
+    
+    [self.ageSlider addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.menSwitch addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.womenSwitch addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.singlesSwitch addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    self.ageLabel.text = [NSString stringWithFormat:@"%i",(int)self.ageSlider.value];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,10 +61,50 @@
 
 - (IBAction)logoutButtonPressed:(UIButton *)sender
 {
+    [PFUser logOut];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 - (IBAction)editProfileButtonPressed:(UIButton *)sender
 {
 }
+
+#pragma mark - Helper Methods
+
+-(void)valueChanged:(id)sender
+{
+    if (sender == self.ageSlider) {
+        [[NSUserDefaults standardUserDefaults] setInteger:(int)self.ageSlider.value forKey:kMUAgeMaxKey];
+        self.ageLabel.text = [NSString stringWithFormat:@"%i",(int)self.ageSlider.value];
+    }
+    else if (sender == self.menSwitch){
+        [[NSUserDefaults standardUserDefaults] setInteger:self.menSwitch.isOn forKey:kMUMenEnabledKey];
+    }
+    else if (sender == self.womenSwitch){
+        [[NSUserDefaults standardUserDefaults] setInteger:self.womenSwitch.isOn forKey:kMUWomenEnabledKey];
+    }
+    else if (sender == self.singlesSwitch){
+        [[NSUserDefaults standardUserDefaults] setInteger:self.singlesSwitch.isOn forKey:kMUSingleEnabledKey];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

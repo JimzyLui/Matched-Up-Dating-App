@@ -35,7 +35,7 @@
 {
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
         [self updateUserInformation];
-        [self performSegueWithIdentifier:@"loginToTabBarSegue" sender:self];
+        [self performSegueWithIdentifier:@"loginToHomeSegue" sender:self];
     }
 }
 
@@ -78,7 +78,7 @@
         }
         else{
             [self updateUserInformation];
-            [self performSegueWithIdentifier:@"loginToTabBarSegue" sender:self];
+            [self performSegueWithIdentifier:@"loginToHomeSegue" sender:self];
         }
     }];
 }
@@ -104,8 +104,8 @@
             if (userDict[kMUUserProfileNameKey]) {
                 userProfile[kMUUserProfileNameKey] = userDict[kMUUserProfileNameKey];
             }
-            if (userDict[kMUUserProfileFirstNameKey]) {
-                userProfile[kMUUserProfileFirstNameKey] = userDict[kMUUserProfileFirstNameKey];
+            if (userDict[@"firstName"]) {
+                userProfile[kMUUserProfileFirstNameKey] = userDict[@"firstName"];
             }
             if (userDict[kMUUserProfileLocationKey][kMUUserProfileNameKey]) {
                 userProfile[kMUUserProfileLocationKey] = userDict[kMUUserProfileLocationKey][kMUUserProfileNameKey];
@@ -115,9 +115,19 @@
             }
             if (userDict[kMUUserProfileBirthdayKey]) {
                 userProfile[kMUUserProfileBirthdayKey] = userDict[kMUUserProfileBirthdayKey];
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateStyle:NSDateFormatterShortStyle];
+                NSDate *date = [formatter dateFromString:userDict[@"birthday"]];
+                NSDate *now = [NSDate date];
+                NSTimeInterval seconds = [now timeIntervalSinceDate:date];
+                int age = seconds/31536000;
+                userProfile[KMUUserProfileAgeKey] = @(age);
             }
             if (userDict[kMUUserProfileInterestedInKey]) {
                 userProfile[kMUUserProfileInterestedInKey] = userDict[kMUUserProfileInterestedInKey];
+            }
+            if (userDict[@"relationship_status"]) {
+                userProfile[kMUUserProfileRelationshipStatusKey] = userDict[@"relationship_status"];
             }
             if ([pictureURL absoluteString]) {
                 userProfile[kMUUserProfilePictureURLKey] = [pictureURL absoluteString];

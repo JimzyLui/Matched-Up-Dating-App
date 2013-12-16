@@ -10,6 +10,19 @@
 		2923071991B549A19247426E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D51758E0572B49EBA108F85C /* libPods.a */; };
 		7D8A3332185A0EAE00FAFC9C /* MUHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A3331185A0EAE00FAFC9C /* MUHomeVC.m */; };
 		7D8A3336185A142B00FAFC9C /* MUSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A3335185A142B00FAFC9C /* MUSettingsVC.m */; };
+		7D8A333A185A186400FAFC9C /* MUEditProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A3339185A186400FAFC9C /* MUEditProfileVC.m */; };
+		7D8A333E185A3C3D00FAFC9C /* MUProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A333D185A3C3D00FAFC9C /* MUProfileVC.m */; };
+		7D8A3342185AB96F00FAFC9C /* MUTestUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A3341185AB96F00FAFC9C /* MUTestUser.m */; };
+		7D8A334E185ABCB100FAFC9C /* babymonkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3344185ABCB100FAFC9C /* babymonkey.jpg */; };
+		7D8A334F185ABCB100FAFC9C /* catinhat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3345185ABCB100FAFC9C /* catinhat.jpg */; };
+		7D8A3350185ABCB100FAFC9C /* doggie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3346185ABCB100FAFC9C /* doggie.jpg */; };
+		7D8A3351185ABCB100FAFC9C /* duckling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3347185ABCB100FAFC9C /* duckling.jpg */; };
+		7D8A3352185ABCB100FAFC9C /* ferret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3348185ABCB100FAFC9C /* ferret.jpg */; };
+		7D8A3353185ABCB100FAFC9C /* hedgehog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A3349185ABCB100FAFC9C /* hedgehog.jpg */; };
+		7D8A3354185ABCB100FAFC9C /* longears.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A334A185ABCB100FAFC9C /* longears.jpg */; };
+		7D8A3355185ABCB100FAFC9C /* pandababy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A334B185ABCB100FAFC9C /* pandababy.jpg */; };
+		7D8A3356185ABCB100FAFC9C /* prayingkitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A334C185ABCB100FAFC9C /* prayingkitten.jpg */; };
+		7D8A3357185ABCB100FAFC9C /* twopawspuppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D8A334D185ABCB100FAFC9C /* twopawspuppy.jpg */; };
 		7DDEAACF1853AA34002AF05F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDEAACE1853AA34002AF05F /* Foundation.framework */; };
 		7DDEAAD11853AA34002AF05F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDEAAD01853AA34002AF05F /* CoreGraphics.framework */; };
 		7DDEAAD31853AA34002AF05F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDEAAD21853AA34002AF05F /* UIKit.framework */; };
@@ -42,6 +55,22 @@
 		7D8A3331185A0EAE00FAFC9C /* MUHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUHomeVC.m; sourceTree = "<group>"; };
 		7D8A3334185A142B00FAFC9C /* MUSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSettingsVC.h; sourceTree = "<group>"; };
 		7D8A3335185A142B00FAFC9C /* MUSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUSettingsVC.m; sourceTree = "<group>"; };
+		7D8A3338185A186400FAFC9C /* MUEditProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUEditProfileVC.h; sourceTree = "<group>"; };
+		7D8A3339185A186400FAFC9C /* MUEditProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUEditProfileVC.m; sourceTree = "<group>"; };
+		7D8A333C185A3C3D00FAFC9C /* MUProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUProfileVC.h; sourceTree = "<group>"; };
+		7D8A333D185A3C3D00FAFC9C /* MUProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUProfileVC.m; sourceTree = "<group>"; };
+		7D8A3340185AB96F00FAFC9C /* MUTestUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUTestUser.h; sourceTree = "<group>"; };
+		7D8A3341185AB96F00FAFC9C /* MUTestUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUTestUser.m; sourceTree = "<group>"; };
+		7D8A3344185ABCB100FAFC9C /* babymonkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babymonkey.jpg; sourceTree = "<group>"; };
+		7D8A3345185ABCB100FAFC9C /* catinhat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catinhat.jpg; sourceTree = "<group>"; };
+		7D8A3346185ABCB100FAFC9C /* doggie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doggie.jpg; sourceTree = "<group>"; };
+		7D8A3347185ABCB100FAFC9C /* duckling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duckling.jpg; sourceTree = "<group>"; };
+		7D8A3348185ABCB100FAFC9C /* ferret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ferret.jpg; sourceTree = "<group>"; };
+		7D8A3349185ABCB100FAFC9C /* hedgehog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog.jpg; sourceTree = "<group>"; };
+		7D8A334A185ABCB100FAFC9C /* longears.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = longears.jpg; sourceTree = "<group>"; };
+		7D8A334B185ABCB100FAFC9C /* pandababy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pandababy.jpg; sourceTree = "<group>"; };
+		7D8A334C185ABCB100FAFC9C /* prayingkitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayingkitten.jpg; sourceTree = "<group>"; };
+		7D8A334D185ABCB100FAFC9C /* twopawspuppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twopawspuppy.jpg; sourceTree = "<group>"; };
 		7DDEAACB1853AA34002AF05F /* MatchedUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchedUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDEAACE1853AA34002AF05F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7DDEAAD01853AA34002AF05F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +148,51 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		7D8A3337185A182800FAFC9C /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7D8A3338185A186400FAFC9C /* MUEditProfileVC.h */,
+				7D8A3339185A186400FAFC9C /* MUEditProfileVC.m */,
+			);
+			name = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		7D8A333B185A3BF800FAFC9C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7D8A333C185A3C3D00FAFC9C /* MUProfileVC.h */,
+				7D8A333D185A3C3D00FAFC9C /* MUProfileVC.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		7D8A333F185AB91F00FAFC9C /* Create Parse User */ = {
+			isa = PBXGroup;
+			children = (
+				7D8A3343185ABC8400FAFC9C /* Test Profile Images */,
+				7D8A3340185AB96F00FAFC9C /* MUTestUser.h */,
+				7D8A3341185AB96F00FAFC9C /* MUTestUser.m */,
+			);
+			name = "Create Parse User";
+			sourceTree = "<group>";
+		};
+		7D8A3343185ABC8400FAFC9C /* Test Profile Images */ = {
+			isa = PBXGroup;
+			children = (
+				7D8A3344185ABCB100FAFC9C /* babymonkey.jpg */,
+				7D8A3345185ABCB100FAFC9C /* catinhat.jpg */,
+				7D8A3346185ABCB100FAFC9C /* doggie.jpg */,
+				7D8A3347185ABCB100FAFC9C /* duckling.jpg */,
+				7D8A3348185ABCB100FAFC9C /* ferret.jpg */,
+				7D8A3349185ABCB100FAFC9C /* hedgehog.jpg */,
+				7D8A334A185ABCB100FAFC9C /* longears.jpg */,
+				7D8A334B185ABCB100FAFC9C /* pandababy.jpg */,
+				7D8A334C185ABCB100FAFC9C /* prayingkitten.jpg */,
+				7D8A334D185ABCB100FAFC9C /* twopawspuppy.jpg */,
+			);
+			name = "Test Profile Images";
+			sourceTree = "<group>";
+		};
 		7DDEAAC21853AA34002AF05F = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +230,8 @@
 			children = (
 				7DDEAAE01853AA34002AF05F /* Main.storyboard */,
 				7DDEAB091853AC42002AF05F /* VCs */,
+				7D8A333B185A3BF800FAFC9C /* Profile */,
+				7D8A333F185AB91F00FAFC9C /* Create Parse User */,
 				7DDEAAD51853AA34002AF05F /* Supporting Files */,
 			);
 			path = MatchedUp;
@@ -201,6 +277,7 @@
 				7D8A332E185A0A0D00FAFC9C /* Login */,
 				7D8A332F185A0E4700FAFC9C /* Home */,
 				7D8A3333185A140200FAFC9C /* Settings */,
+				7D8A3337185A182800FAFC9C /* Edit Profile */,
 			);
 			name = VCs;
 			sourceTree = "<group>";
@@ -285,7 +362,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDEAAEA1853AA34002AF05F /* Images.xcassets in Resources */,
+				7D8A3352185ABCB100FAFC9C /* ferret.jpg in Resources */,
 				7DDEAAD91853AA34002AF05F /* InfoPlist.strings in Resources */,
+				7D8A3351185ABCB100FAFC9C /* duckling.jpg in Resources */,
+				7D8A3357185ABCB100FAFC9C /* twopawspuppy.jpg in Resources */,
+				7D8A3354185ABCB100FAFC9C /* longears.jpg in Resources */,
+				7D8A3356185ABCB100FAFC9C /* prayingkitten.jpg in Resources */,
+				7D8A3350185ABCB100FAFC9C /* doggie.jpg in Resources */,
+				7D8A3353185ABCB100FAFC9C /* hedgehog.jpg in Resources */,
+				7D8A334F185ABCB100FAFC9C /* catinhat.jpg in Resources */,
+				7D8A334E185ABCB100FAFC9C /* babymonkey.jpg in Resources */,
+				7D8A3355185ABCB100FAFC9C /* pandababy.jpg in Resources */,
 				7DDEAAE21853AA34002AF05F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,10 +427,13 @@
 			files = (
 				7DDEAADF1853AA34002AF05F /* MUAppDelegate.m in Sources */,
 				7DDEAB081853AC31002AF05F /* MULoginVC.m in Sources */,
+				7D8A333A185A186400FAFC9C /* MUEditProfileVC.m in Sources */,
 				7DDEAADB1853AA34002AF05F /* main.m in Sources */,
+				7D8A333E185A3C3D00FAFC9C /* MUProfileVC.m in Sources */,
 				7D8A3332185A0EAE00FAFC9C /* MUHomeVC.m in Sources */,
 				7DDEAB0C1854191C002AF05F /* MUConstants.m in Sources */,
 				7D8A3336185A142B00FAFC9C /* MUSettingsVC.m in Sources */,
+				7D8A3342185AB96F00FAFC9C /* MUTestUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
