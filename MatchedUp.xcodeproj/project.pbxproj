@@ -853,10 +853,10 @@
 		7DDEAAD51853AA34002AF05F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DDEAAE91853AA34002AF05F /* Images.xcassets */,
 				7D3967D3186A086A00C1B0EE /* Matched_Up_assets */,
 				7DDEAADD1853AA34002AF05F /* MUAppDelegate.h */,
 				7DDEAADE1853AA34002AF05F /* MUAppDelegate.m */,
-				7DDEAAE91853AA34002AF05F /* Images.xcassets */,
 				7DDEAAD61853AA34002AF05F /* MatchedUp-Info.plist */,
 				7DDEAAD71853AA34002AF05F /* InfoPlist.strings */,
 				7DDEAADA1853AA34002AF05F /* main.m */,
