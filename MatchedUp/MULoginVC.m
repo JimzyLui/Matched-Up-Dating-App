@@ -121,7 +121,7 @@
                 NSDate *now = [NSDate date];
                 NSTimeInterval seconds = [now timeIntervalSinceDate:date];
                 int age = seconds/31536000;
-                userProfile[KMUUserProfileAgeKey] = @(age);
+                userProfile[kMUUserProfileAgeKey] = @(age);
             }
             if (userDict[kMUUserProfileInterestedInKey]) {
                 userProfile[kMUUserProfileInterestedInKey] = userDict[kMUUserProfileInterestedInKey];

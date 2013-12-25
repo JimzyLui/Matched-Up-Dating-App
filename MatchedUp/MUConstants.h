@@ -23,7 +23,7 @@ extern NSString *const kMUUserProfileBirthdayKey;
 extern NSString *const kMUUserProfileInterestedInKey;
 extern NSString *const kMUUserProfilePictureURLKey;
 extern NSString *const kMUUserProfileRelationshipStatusKey;
-extern NSString *const KMUUserProfileAgeKey;
+extern NSString *const kMUUserProfileAgeKey;
 
 #pragma mark - Photo Class
 
@@ -47,6 +47,21 @@ extern NSString *const kMUMenEnabledKey;
 extern NSString *const kMUWomenEnabledKey;
 extern NSString *const kMUSingleEnabledKey;
 extern NSString *const kMUAgeMaxKey;
+
+#pragma mark - ChatRoom
+
+extern NSString *const kMUChatRoomClassKey;
+extern NSString *const kMUChatRoomUser1Key;
+extern NSString *const kMUChatRoomUser2Key;
+
+#pragma mark - Chat
+
+extern NSString *const kMUChatClassKey;
+extern NSString *const kMUChatChatRoomKey;
+extern NSString *const kMUChatFromUserKey;
+extern NSString *const kMUChatToUserKey;
+extern NSString *const kMUChatTextKey;
+
 
 
 @end

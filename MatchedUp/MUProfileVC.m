@@ -40,7 +40,7 @@
     
     PFUser *user = self.photo[kMUPhotoUserKey];
     self.locationLabel.text = user[kMUUserProfileKey][kMUUserProfileLocationKey];
-    self.ageLabel.text = [NSString stringWithFormat:@"%@",user [kMUUserProfileKey][KMUUserProfileAgeKey]];
+    self.ageLabel.text = [NSString stringWithFormat:@"%@",user [kMUUserProfileKey][kMUUserProfileKey]];
     self.statusLabel.text = user[kMUUserProfileKey][kMUUserProfileRelationshipStatusKey];
     self.tagLineLabel.text = user[kMUUserTagLineKey];
 }

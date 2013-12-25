@@ -20,8 +20,10 @@
         if(!error){
             NSDictionary *profile = @{@"age" : @28,
                                       @"birthday" : @"11/22/1985",
-                                      @"firstName" : @"Julie",
+                                      //@"firstName" : @"Julie",
+                                      @"gender" : @"female",
                                       @"location" : @"Berlin, Germany",
+                                      //@"tagLine" : @"I like to climb",
                                       @"name" : @"Julie Adams"};
             [newUser setObject:profile forKey:@"profile"];
             [newUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
