@@ -146,7 +146,11 @@
 
 - (IBAction)likeButtonPressed:(UIButton *)sender
 {
-    NSLog(@"Like Button Pressed");
+    //NSLog(@"Like Button Pressed");
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Like"];
+    [mixpanel flush];
+
     [self checkLike];
 }
 
@@ -157,6 +161,10 @@
 
 - (IBAction)dislikeButtonPressed:(UIButton *)sender
 {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Dislike"];
+    [mixpanel flush];
+
     [self checkDislike];
 }
 

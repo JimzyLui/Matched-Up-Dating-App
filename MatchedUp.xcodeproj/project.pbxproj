@@ -720,7 +720,6 @@
 			children = (
 				7D7EABD8185F413A005FB73C /* MUMatchVC.h */,
 				7D7EABD9185F413A005FB73C /* MUMatchVC.m */,
-				7D39690B186B189800C1B0EE /* Transition Helper */,
 			);
 			name = Match;
 			sourceTree = "<group>";
@@ -856,6 +855,7 @@
 				7D8A333B185A3BF800FAFC9C /* Profile */,
 				7D8A333F185AB91F00FAFC9C /* Create Parse User */,
 				7D7EABD7185F4106005FB73C /* Match */,
+				7D39690B186B189800C1B0EE /* Transition Helper */,
 				7D7EABDB185F433D005FB73C /* Matches */,
 				7D7EABDF185F440B005FB73C /* Chat */,
 				7DDEAAD51853AA34002AF05F /* Supporting Files */,
