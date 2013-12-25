@@ -111,6 +111,7 @@
     }
     
     cell.textLabel.text = likedUser[kMUUserProfileKey][kMUUserProfileFirstNameKey];
+    cell.detailTextLabel.text = chatRoom[@"createdAt"];
     
     //cell.imageView.image = place holder image
     cell.imageView.contentMode = UIViewContentModeScaleAspectFit;

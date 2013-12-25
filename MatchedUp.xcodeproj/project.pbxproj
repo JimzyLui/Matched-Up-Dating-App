@@ -157,6 +157,7 @@
 		7D396908186A086B00C1B0EE /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D396874186A086B00C1B0EE /* iTunesArtwork.png */; };
 		7D396909186A086B00C1B0EE /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D396875186A086B00C1B0EE /* iTunesArtwork@2x.png */; };
 		7D39690A186A086B00C1B0EE /* Matched_Up_DesignV3_red.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D396876186A086B00C1B0EE /* Matched_Up_DesignV3_red.pdf */; };
+		7D39690E186B18C500C1B0EE /* MUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D39690D186B18C500C1B0EE /* MUTransitionAnimator.m */; };
 		7D7EABDA185F413A005FB73C /* MUMatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7EABD9185F413A005FB73C /* MUMatchVC.m */; };
 		7D7EABDE185F4359005FB73C /* MUMatchesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7EABDD185F4359005FB73C /* MUMatchesVC.m */; };
 		7D7EABE2185F46EE005FB73C /* MUChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7EABE1185F46EE005FB73C /* MUChatVC.m */; };
@@ -352,6 +353,8 @@
 		7D396874186A086B00C1B0EE /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		7D396875186A086B00C1B0EE /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		7D396876186A086B00C1B0EE /* Matched_Up_DesignV3_red.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Matched_Up_DesignV3_red.pdf; sourceTree = "<group>"; };
+		7D39690C186B18C500C1B0EE /* MUTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUTransitionAnimator.h; sourceTree = "<group>"; };
+		7D39690D186B18C500C1B0EE /* MUTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUTransitionAnimator.m; sourceTree = "<group>"; };
 		7D7EABD8185F413A005FB73C /* MUMatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUMatchVC.h; sourceTree = "<group>"; };
 		7D7EABD9185F413A005FB73C /* MUMatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUMatchVC.m; sourceTree = "<group>"; };
 		7D7EABDC185F4359005FB73C /* MUMatchesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUMatchesVC.h; sourceTree = "<group>"; };
@@ -703,11 +706,21 @@
 			path = ios7;
 			sourceTree = "<group>";
 		};
+		7D39690B186B189800C1B0EE /* Transition Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7D39690C186B18C500C1B0EE /* MUTransitionAnimator.h */,
+				7D39690D186B18C500C1B0EE /* MUTransitionAnimator.m */,
+			);
+			name = "Transition Helper";
+			sourceTree = "<group>";
+		};
 		7D7EABD7185F4106005FB73C /* Match */ = {
 			isa = PBXGroup;
 			children = (
 				7D7EABD8185F413A005FB73C /* MUMatchVC.h */,
 				7D7EABD9185F413A005FB73C /* MUMatchVC.m */,
+				7D39690B186B189800C1B0EE /* Transition Helper */,
 			);
 			name = Match;
 			sourceTree = "<group>";
@@ -1192,6 +1205,7 @@
 				7DDEAADF1853AA34002AF05F /* MUAppDelegate.m in Sources */,
 				7DDEAB081853AC31002AF05F /* MULoginVC.m in Sources */,
 				7D8A333A185A186400FAFC9C /* MUEditProfileVC.m in Sources */,
+				7D39690E186B18C500C1B0EE /* MUTransitionAnimator.m in Sources */,
 				7DDEAADB1853AA34002AF05F /* main.m in Sources */,
 				7D8A333E185A3C3D00FAFC9C /* MUProfileVC.m in Sources */,
 				7D8A3332185A0EAE00FAFC9C /* MUHomeVC.m in Sources */,

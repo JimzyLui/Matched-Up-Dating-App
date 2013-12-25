@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MUProfileVCDelegate <NSObject>
+
+-(void)didPressLike;
+-(void)didPressDislike;
+
+@end
 @interface MUProfileVC : UIViewController
+
+@property(weak,nonatomic)id<MUProfileVCDelegate>delegate;
 
 @property(strong,nonatomic)PFObject *photo;
 

@@ -10,8 +10,9 @@
 #import "MUTestUser.h"
 #import "MUProfileVC.h"
 #import "MUMatchVC.h"
+#import "MUTransitionAnimator.h"
 
-@interface MUHomeVC ()<MUMatchVCDelegate>
+@interface MUHomeVC ()<MUMatchVCDelegate,MUProfileVCDelegate, UIViewControllerTransitioningDelegate>
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *chatBarButtonItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *settingsBarButtonItem;
@@ -123,12 +124,13 @@
     if([segue.identifier isEqualToString:@"homeToProfileSegue"]){
         MUProfileVC *targetVC = segue.destinationViewController;
         targetVC.photo = self.photo;
-    }
-    else if ([segue.identifier isEqualToString:@"homeToMatchSegue"]){
-        MUMatchVC *targetVC = segue.destinationViewController;
-        targetVC.matchedUserImage = self.photoImageView.image;
         targetVC.delegate = self;
     }
+//    else if ([segue.identifier isEqualToString:@"homeToMatchSegue"]){
+//        MUMatchVC *targetVC = segue.destinationViewController;
+//        targetVC.matchedUserImage = self.photoImageView.image;
+//        targetVC.delegate = self;
+//    }
 }
 
 #pragma mark - IBActions
@@ -217,7 +219,7 @@
 
 -(void)updateView
 {
-    self.firstNameLabel.text = self.photo[kMUPhotoUserKey][kMUUserProfileKey][kMUUserProfileNameKey];
+    self.firstNameLabel.text = self.photo[kMUPhotoUserKey][kMUUserProfileKey][kMUUserProfileFirstNameKey];
     self.ageLabel.text = [NSString stringWithFormat:@"%@",self.photo[kMUPhotoUserKey][kMUUserProfileKey][kMUUserProfileAgeKey]];
     //self.tagLineLabel.text = self.photo[kMUPhotoUserKey][kMUUserTagLineKey];
 }
@@ -368,7 +370,16 @@
             [chatroom setObject:[PFUser currentUser] forKey:kMUChatRoomUser1Key];
             [chatroom setObject:self.photo[kMUPhotoUserKey] forKey:kMUChatRoomUser2Key];
             [chatroom saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                [self performSegueWithIdentifier:@"homeToMatchSegue" sender:nil];
+                //[self performSegueWithIdentifier:@"homeToMatchSegue" sender:nil];
+
+                UIStoryboard *myStoryboard = self.storyboard;
+                MUMatchVC *matchVC = [myStoryboard instantiateViewControllerWithIdentifier:@"matchVC"];
+                matchVC.view.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:.75];
+                matchVC.transitioningDelegate = self;
+                matchVC.matchedUserImage = self.photoImageView.image;
+                matchVC.delegate = self;
+                matchVC.modalPresentationStyle = UIModalPresentationCustom;
+                [self presentViewController:matchVC animated:YES completion:nil];
             }];
         }
     }];
@@ -387,10 +398,35 @@
 }
 
 
+#pragma mark - MUProfileVC Delegate
 
+-(void)didPressLike
+{
+    [self.navigationController popViewControllerAnimated:NO];
+    [self checkLike];
+}
 
+-(void)didPressDislike
+{
+    [self.navigationController popViewControllerAnimated:NO];
+    [self checkDislike];
+}
 
+#pragma mark - UIViewControllerTransitioning Delegate
 
+-(id<UIViewControllerAnimatedTransitioning>)
+animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    MUTransitionAnimator *animator = [[MUTransitionAnimator alloc] init];
+    animator.presenting = YES;
+    return animator;
+}
 
+-(id<UIViewControllerAnimatedTransitioning>)
+animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    MUTransitionAnimator *animator = [[MUTransitionAnimator alloc] init];
+    return animator;
+}
 
 @end

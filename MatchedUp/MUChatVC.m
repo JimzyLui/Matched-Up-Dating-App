@@ -42,12 +42,15 @@
 
 - (void)viewDidLoad
 {
+    self.delegate = self;   //moving the delegate & datasource statements above the super call changes the functionality from ios6 to iOS7.
+    self.dataSource = self;
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.delegate = self;
-    self.dataSource = self;
+
     
-    [[JSBubbleView appearance] setFont:[UIFont systemFontOfSize:16.0f]];
+    //[[JSBubbleView appearance] setFont:[UIFont systemFontOfSize:16.0f]];
+    [[JSBubbleView appearance] setFont:[UIFont fontWithName:@"HelveticaNeue" size:17.0f]];
     self.messageInputView.textView.placeHolder = @"New Message";
     [self setBackgroundColor:[UIColor whiteColor]];
     
