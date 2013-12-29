@@ -57,7 +57,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    //[MUTestUser saveTestUserToParse];
+    //[MUTestUser saveTestUserToParse01];
+    //[MUTestUser saveTestUserToParse03];
+    //[MUTestUser saveTestUserToParse04];
+    //[MUTestUser saveTestUserToParse05];
+    //[MUTestUser saveTestUserToParse06];
+    //[MUTestUser saveTestUserToParse07];
+    //[MUTestUser saveTestUserToParse08];
+    //[MUTestUser saveTestUserToParse09];
+    //[MUTestUser saveTestUserToParse10];
 
     [self setupViews];
 

@@ -10,6 +10,15 @@
 
 @interface MUTestUser : NSObject
 
-+(void)saveTestUserToParse;
++(void)saveTestUserToParse01;
++(void)saveTestUserToParse02;
++(void)saveTestUserToParse03;
++(void)saveTestUserToParse04;
++(void)saveTestUserToParse05;
++(void)saveTestUserToParse06;
++(void)saveTestUserToParse07;
++(void)saveTestUserToParse08;
++(void)saveTestUserToParse09;
++(void)saveTestUserToParse10;
 
 @end
